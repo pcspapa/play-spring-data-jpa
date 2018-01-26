@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show-sql: true
+logging:
+  level:
+    ROOT: info
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
