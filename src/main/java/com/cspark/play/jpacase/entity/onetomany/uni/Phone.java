@@ -1,4 +1,4 @@
-package com.cspark.play.jpacase.entity.onetomany;
+package com.cspark.play.jpacase.entity.onetomany.uni;
 
 import com.cspark.play.jpacase.entity.PhoneBase;
 

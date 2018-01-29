@@ -1,5 +1,9 @@
-package com.cspark.play.jpacase.entity.onetomany;
+package com.cspark.play.jpacase.entity.onetomany.uni;
 
+import com.cspark.play.jpacase.entity.onetomany.uni.Person;
+import com.cspark.play.jpacase.entity.onetomany.uni.Phone;
+import com.cspark.play.jpacase.entity.onetomany.uni.UniOtmPersonRepository;
+import com.cspark.play.jpacase.entity.onetomany.uni.UniOtmPhoneRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,9 +11,6 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.persistence.CascadeType;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;

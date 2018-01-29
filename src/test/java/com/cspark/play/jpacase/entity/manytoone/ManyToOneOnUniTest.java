@@ -88,7 +88,7 @@ public class ManyToOneOnUniTest {
     }
 
     @Test
-    public void updateForPerson() {
+    public void updatePerson() {
         Person person = new Person(1L, "edit name");
         personRepository.save(person);
 
@@ -98,7 +98,7 @@ public class ManyToOneOnUniTest {
     }
 
     @Test
-    public void updateForPhone() {
+    public void updatePhone() {
         Phone phone = new Phone(1L, "234-567-8901");
         phoneRepository.save(phone);
 
@@ -121,7 +121,7 @@ public class ManyToOneOnUniTest {
     }
 
     @Test
-    public void updateForPhoneWithPersonId() {
+    public void updatePhoneWithPersonId() {
         Phone phone = new Phone(1L, "234-567-8901");
         phone.setPerson(new Person(1L));
         phoneRepository.save(phone);
