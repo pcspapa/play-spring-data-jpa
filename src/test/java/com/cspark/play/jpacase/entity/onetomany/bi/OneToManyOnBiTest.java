@@ -192,7 +192,7 @@ public class OneToManyOnBiTest {
     }
 
     @Test
-    public void addPhoneWithPersonId() {
+    public void addPhoneSetPerson() {
         Phone phone = new Phone("234-567-8901");
         phone.setPerson(new Person(1L));
 
@@ -212,5 +212,14 @@ public class OneToManyOnBiTest {
         // @ManyToOne(cascade = CascadeType.PERSIST)
         // private Person person;
         // Exception
+    }
+
+    @Test
+    public void personWithIdAddPhone() {
+        Person person = new Person(1L);
+        person.addPhone(new Phone("234-567-8901"));
+
+        personRepository.save(person);
+        // TODO
     }
 }

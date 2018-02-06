@@ -7,9 +7,9 @@ import javax.persistence.*;
 @Entity(name = "mto_phone_uni")
 public class Phone extends PhoneBase {
 
-    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "person_id",
-            foreignKey = @ForeignKey(name = "OTM_PERSON_UNI_ID_FK")
+            foreignKey = @ForeignKey(name = "MTO_PERSON_UNI_ID_FK")
     )
     private Person person;
 
